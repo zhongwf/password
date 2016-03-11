@@ -19,8 +19,22 @@
     'click',
     function (event) {
       event.preventDefault()
-      document.getElementById('result').value = md5(input.value).substr(0,16);
+	  var str = md5(input.value);
+      document.getElementById('result').value = str.substr(0,8) + str.substr(8,8).toLocaleUpperCase() + "@";
+	  document.getElementById('numberResult').value = str.replace(/[^\d]/g,'').substr(0,6);
+	
+	  
     }
   )
   input.value = '域名#实际密码'
 }())
+
+
+
+function showSixNumber(){
+	
+	document.getElementById("sixNumber").style.visibility="visible";
+	document.getElementById("sixNumber").style.display="block";
+	
+	
+}

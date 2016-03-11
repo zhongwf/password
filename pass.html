@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="./demo.css">
 </head>
 <body>
-<h1>登录密码生成器 &nbsp;&nbsp;<a target="_blank" href="./pass.zip">（下载密码生成器）</a></h1>
+<h1>登录密码生成器 &nbsp;<a target="_blank" href="./pass.zip" style="font-size: small;">（下载密码生成器）</a></h1>
 为了信息安全，您在不同系统的登录密码应当不同。（<a href="http://it.people.com.cn/n/2014/1226/c1009-26279528.html" target="_blank">为什么密码必须不同？</a>）<br/>
 此工具帮助您只需记住一个密码，即可为不同网站计算不同的登录密码。
 <br/>
@@ -20,11 +20,20 @@
     <input   id="input" >
     <br>
 	<br/>
-    <button type="submit" id="calculate">生成网站的登录密码</button>(计算方法：MD5加密输入后截取前16位。)
+    <button type="submit" id="calculate">生成网站的登录密码</button>
+	 &nbsp;<a href="#" onclick='showSixNumber();' style="font-size: small;color:white">需要纯数字6位密码?</a>
+	
     <br>
 	<br/>
-    <h2>网站登录密码</h2>
+	
+    <h2>网站登录密码&nbsp;<a  style="font-size: small;color:white">(计算方法：MD5加密输入后，截取0~8位小写，9~16位大写，最后加特殊字符@。)</a></h2>
     <input id="result">
+
+	<div id="sixNumber" style="display:none;visibility:hidden;">
+    <h2>6位纯数字密码&nbsp;<a  style="font-size: small;color:white">(计算方法：MD5加密输入后，截取结果的头6个数字。)</a></h2>
+    <input id="numberResult">
+	</div>
+	
     <br>
 </form>
 <br/>
