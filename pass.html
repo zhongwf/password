@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://blueimp.github.io/JavaScript-MD5/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+<meta charset="utf-8">
+<title>登录密码生成器</title>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./demo.css">
+</head>
+<body>
+<h1>登录密码生成器 &nbsp;&nbsp;<a target="_blank" href="./pass.zip">（下载密码生成器）</a></h1>
+为了信息安全，您在不同系统的登录密码应当不同。（<a href="http://it.people.com.cn/n/2014/1226/c1009-26279528.html" target="_blank">为什么密码必须不同？</a>）<br/>
+此工具帮助您只需记住一个密码，即可为不同网站计算不同的登录密码。
+<br/>
+<form>
+    <h2>输入(如so.com#123456)</h2>
+    <input   id="input" >
+    <br>
+	<br/>
+    <button type="submit" id="calculate">生成网站的登录密码</button>(计算方法：MD5加密输入后截取前16位。)
+    <br>
+	<br/>
+    <h2>网站登录密码</h2>
+    <input id="result">
+    <br>
+</form>
+<br/>
+
+<script src="./md5.js"></script>
+<script src="./demo.js"></script>
+
+
+</body></html>
