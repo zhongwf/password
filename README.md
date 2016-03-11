@@ -7,3 +7,5 @@
 
 [演示地址](http://wx.jprda.com/app/my/pass/pass.html)
 
+
+![](http://raw.githubusercontent.com/zhongwf/password/master/screen.jpg)
